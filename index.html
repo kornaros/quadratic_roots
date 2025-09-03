@@ -16,14 +16,48 @@
       });
     });
   </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      max-width: 900px;
+    }
+
+    .image-block {
+      margin-bottom: 2em;
+      text-align: center;
+    }
+
+    .image-block img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .image-block div {
+      margin-top: 0.5em;
+      font-size: 0.95em;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 1em;
+      }
+      h2, h3 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 2em; max-width: 800px;">
+<body>
   <h2>Διαδραστικό Demo – Λύση Δευτεροβάθμιας Εξίσωσης</h2>
   <p style="font-size: 1.1em; color: #333;">
     Αυτό είναι ένα διαδραστικό demo των δυνατοτήτων του <strong>SageMath</strong>.
     Μπορείτε να υπολογίσετε τις ρίζες μιας δευτεροβάθμιας εξίσωσης εισάγοντας τιμές για τους συντελεστές <strong>a, b, c</strong> στο διάστημα <code>[-10, 10]</code>.
     Οι τιμές μπορούν να περιλαμβάνουν μαθηματικές παραστάσεις όπως:
-    <code>π</code>, <code>e</code>, <code> ln(2)</code>, <code>sqrt(2)</code> (τετραγωνική ρίζα του 2), κ.ά.
+    <code>π</code>, <code>e</code>, <code> ln(2)</code>, <code>sqrt(2)</code>, κ.ά.
     <br><br>
     Απλώς εισάγετε τιμές και πατήστε <strong>Enter</strong> ή αλλάξτε πεδίο για να εκτελεστεί ο υπολογισμός.
   </p>
@@ -103,95 +137,112 @@ def solve_quadratic(
 
   <!-- Footer με τις εικόνες -->
   <hr style="margin: 3em 0;">
-  <h3>Στιγμιότυπα από άλλα projects από την πρώτη ενότητα: Εισαγωγή στην Υλοποίηση Διαδραστικών Μαθημάτων με SageMath/Python</h3>
+  <h3>Στιγμιότυπα με εικόνες από άλλα projects από την πρώτη ενότητα: Εισαγωγή στην Υλοποίηση Διαδραστικών Μαθημάτων με SageMath/Python</h3>
 
-  <div style="display: flex; flex-wrap: wrap; gap: 1em; margin-top: 1em;">
-    <!-- Παράδειγμα για όλες τις εικόνες -->
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/p1-p2-p3-arrow.png" alt="p1-p2-p3-arrow" style="max-width: 100%;">
-        <div>p1-p2-p3-arrow: Παράδειγμα διαδραστικού διαγράμματος</div>
-    </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/paragwgos_graphic_array.png" alt="paragwgos_graphic_array" style="max-width: 100%;">
-        <div>paragwgos_graphic_array: Παράσταση παραγώγου σε πίνακα</div>
-    </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/parametric_derivative_.gif" alt="parametric_derivative_" style="max-width: 100%;">
-        <div>parametric_derivative_: Κινούμενη εικόνα παραμετρικής παραγώγου</div>
-    </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/plane_me_imlicitplot.png" alt="plane_me_imlicitplot" style="max-width: 100%;">
-        <div>plane_me_imlicitplot: Γραφική παράσταση implicit plot</div>
-    </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/plane_me_parametric_plot.png" alt="plane_me_parametric_plot" style="max-width: 100%;">
-        <div>plane_me_parametric_plot: Παράμετρος γραφικής παράστασης</div>
-    </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/pleyresparallhlogrammou.png" alt="pleyresparallhlogrammou" style="max-width: 100%;">
-        <div>pleyresparallhlogrammou: Πλευρές παραλληλογράμμου</div>
-    </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/plotsin_apo_meionpi_ews2pi.png" alt="plotsin_apo_meionpi_ews2pi" style="max-width: 100%;">
-        <div>plotsin_apo_meionpi_ews2pi: Γράφημα ημιτόνου</div>
-    </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/polarcoordinates.png" alt="polarcoordinates" style="max-width: 100%;">
-        <div>polarcoordinates: Συντεταγμένες σε πολικό σύστημα</div>
-    </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/polarplot.png" alt="polarplot" style="max-width: 100%;">
-        <div>polarplot: Πολικό γράφημα</div>
-    </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/regression_with_title.png" alt="regression_with_title" style="max-width: 100%;">
-        <div>regression_with_title: Γραμμική παλινδρόμηση με τίτλο</div>
+  <div>
+    <div class="image-block">
+      <img src="images/p1-p2-p3-arrow.png" alt="p1-p2-p3-arrow">
+      <div>p1-p2-p3-arrow: Παράδειγμα διαγράμματος με βέλος για επεξήγηση</div>
     </div>
 
-    <!-- Προσθέτουμε τις υπόλοιπες εικόνες με τον ίδιο τρόπο -->
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/sagehistogram.png" alt="sagehistogram" style="max-width: 100%;">
-        <div>sagehistogram: Ιστογράμματα με SageMath</div>
+    <div class="image-block">
+      <img src="images/paragwgos_graphic_array.png" alt="paragwgos_graphic_array">
+      <div>paragwgos_graphic_array: Παράσταση παραγώγου σε πίνακα</div>
     </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/scatterandlistplot.png" alt="scatterandlistplot" style="max-width: 100%;">
-        <div>scatterandlistplot: Scatter plot και List plot</div>
+
+    <div class="image-block">
+      <img src="images/parametric_derivative_.gif" alt="parametric_derivative_">
+      <div>parametric_derivative_: Κινούμενη εικόνα παραμετρικής παραγώγου</div>
     </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/semilog.png" alt="semilog" style="max-width: 100%;">
-        <div>semilog: Γραφική παράσταση ημιλογαριθμική</div>
+
+    <div class="image-block">
+      <img src="images/plane_me_imlicitplot.png" alt="plane_me_imlicitplot">
+      <div>plane_me_imlicitplot: Γραφική παράσταση implicit plot</div>
     </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/slider-paragwgoi.png" alt="slider-paragwgoi" style="max-width: 100%;">
-        <div>slider-paragwgoi: Παράδειγμα με slider παραγώγων</div>
+
+    <div class="image-block">
+      <img src="images/plane_me_parametric_plot.png" alt="plane_me_parametric_plot">
+      <div>plane_me_parametric_plot: Παράμετρος γραφικής παράστασης</div>
     </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/sygkroush.png" alt="sygkroush" style="max-width: 100%;">
-        <div>sygkroush: Προσομοίωση σύγκρουσης</div>
+
+    <div class="image-block">
+      <img src="images/pleyresparallhlogrammou.png" alt="pleyresparallhlogrammou">
+      <div>pleyresparallhlogrammou: Πλευρές παραλληλογράμμου</div>
     </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/symbolh.png" alt="symbolh" style="max-width: 100%;">
-        <div>symbolh: Παράδειγμα σύμβολου</div>
+
+    <div class="image-block">
+      <img src="images/plotsin_apo_meionpi_ews2pi.png" alt="plotsin_apo_meionpi_ews2pi">
+      <div>plotsin_apo_meionpi_ews2pi: Γράφημα ημιτόνου</div>
     </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/systhmaaniswsewn.png" alt="systhmaaniswsewn" style="max-width: 100%;">
-        <div>systhmaaniswsewn: Λύση συστήματος ανισώσεων</div>
+
+    <div class="image-block">
+      <img src="images/polarcoordinates.png" alt="polarcoordinates">
+      <div>polarcoordinates: Συντεταγμένες σε πολικό σύστημα</div>
     </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/table.png" alt="table" style="max-width: 100%;">
-        <div>table: Παράσταση πίνακα</div>
+
+    <div class="image-block">
+      <img src="images/polarplot.png" alt="polarplot">
+      <div>polarplot: Πολικό γράφημα</div>
     </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/tangent_secant_.gif" alt="tangent_secant_" style="max-width: 100%;">
-        <div>tangent_secant_: Κινούμενο tangent και secant</div>
+
+    <div class="image-block">
+      <img src="images/regression_with_title.png" alt="regression_with_title">
+      <div>regression_with_title: Γραμμική παλινδρόμηση με τίτλο</div>
     </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/taxythta-epitaxynsh.png" alt="taxythta-epitaxynsh" style="max-width: 100%;">
-        <div>taxythta-epitaxynsh: Γραφική παράσταση ταχύτητας</div>
+
+    <div class="image-block">
+      <img src="images/sagehistogram.png" alt="sagehistogram">
+      <div>sagehistogram: Ιστογράμματα με SageMath</div>
     </div>
-    <div style="flex: 1 1 200px; text-align: center;">
-        <img src="images/theorem_thalhs.png" alt="theorem_thalhs" style="max-width: 100%;">
-        <div>theorem_thalhs: Απόδειξη Θεωρήματος Θαλή</div>
+
+    <div class="image-block">
+      <img src="images/scatterandlistplot.png" alt="scatterandlistplot">
+      <div>scatterandlistplot: Scatter plot και List plot</div>
+    </div>
+
+    <div class="image-block">
+      <img src="images/semilog.png" alt="semilog">
+      <div>semilog: Γραφική παράσταση ημιλογαριθμική</div>
+    </div>
+
+    <div class="image-block">
+      <img src="images/slider-paragwgoi.png" alt="slider-paragwgoi">
+      <div>slider-paragwgoi: Παράδειγμα με slider παραγώγων</div>
+    </div>
+
+    <div class="image-block">
+      <img src="images/sygkroush.png" alt="sygkroush">
+      <div>sygkroush: Προσομοίωση σύγκρουσης</div>
+    </div>
+
+    <div class="image-block">
+      <img src="images/symbolh.png" alt="symbolh">
+      <div>symbolh: Παράδειγμα σύμβολου</div>
+    </div>
+
+    <div class="image-block">
+      <img src="images/systhmaaniswsewn.png" alt="systhmaaniswsewn">
+      <div>systhmaaniswsewn: Λύση συστήματος ανισώσεων</div>
+    </div>
+
+    <div class="image-block">
+      <img src="images/table.png" alt="table">
+      <div>table: Παράσταση πίνακα</div>
+    </div>
+
+    <div class="image-block">
+      <img src="images/tangent_secant_.gif" alt="tangent_secant_">
+      <div>tangent_secant_: Κινούμενο tangent και secant</div>
+    </div>
+
+    <div class="image-block">
+      <img src="images/taxythta-epitaxynsh.png" alt="taxythta-epitaxynsh">
+      <div>taxythta-epitaxynsh: Γραφική παράσταση ταχύτητας</div>
+    </div>
+
+    <div class="image-block">
+      <img src="images/theorem_thalhs.png" alt="theorem_thalhs">
+      <div>theorem_thalhs: Απόδειξη Θεωρήματος Θαλή</div>
     </div>
   </div>
 
